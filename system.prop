@@ -1,5 +1,9 @@
 #
+<<<<<<< HEAD
 # system.prop for GT-S5660
+=======
+# system.prop for GT-S5570
+>>>>>>> fe97eb2b304e06da7ce2bf4944f4426c15fb96a0
 #
 
 ## Graphics
@@ -40,14 +44,14 @@ dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 
 ## Mass storage
-persist.sys.usb.config=mass_storage,adb
+persist.sys.usb.config=adb,mass_storage
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
 ## Camcorder
 debug.camcorder.disablemeta=1
 
-#MM Camera
+## Camera
 ro.media.enc.vid.m4v.fps=5,15
 ro.media.enc.vid.m4v.width=176,320
 ro.media.enc.vid.m4v.height=144,240
@@ -68,3 +72,9 @@ ro.media.enc.vid.bps.min =90000
 ro.media.enc.vid.bps.max =770000
 ro.media.enc.vid.fps.min = 5
 ro.media.enc.vid.fps.max = 15
+
+## Hardware info
+ro.device.gpu=Adreno 200
+ro.device.rear_cam=3.2 MP
+ro.device.front_cam=n/a
+ro.device.screen_res=320x480

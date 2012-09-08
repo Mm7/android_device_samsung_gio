@@ -49,7 +49,7 @@
         <value>787200</value>
         <value>806400</value>
     </array>
-  <item name="cpu.idle">3.0</item>
+   <item name="cpu.idle">3.0</item>
     <array name="cpu.active">
         <value>5</value>
         <value>32</value>
