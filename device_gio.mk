@@ -13,31 +13,31 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/tass/vendor_blobs.mk)
+$(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
 
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
-DEVICE_PACKAGE_OVERLAYS := device/samsung/tass/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.tass
+    camera.gio
 
 ## Audio
 PRODUCT_PACKAGES += \
-   audio.primary.tass \
-   audio_policy.tass
+   audio.primary.gio \
+   audio_policy.gio
 
 ## Lights
 PRODUCT_PACKAGES += \
-   lights.tass
+   lights.gio
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/tass/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
-    device/samsung/tass/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
-    device/samsung/tass/ramdisk/GIO.rle:root/GIO.rle
+    device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
+    device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
+    device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
 
 ## LDPI assets
 PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
