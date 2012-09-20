@@ -17,4 +17,4 @@ PRODUCT_DEVICE := gio
 PRODUCT_NAME := cm_gio
 
 ## Bootanimation
-TARGET_BOOTANIMATION_NAME := vertical-240x320
+TARGET_BOOTANIMATION_NAME := vertical-320x480
