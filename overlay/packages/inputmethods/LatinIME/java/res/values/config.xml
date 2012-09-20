@@ -19,5 +19,5 @@
 -->
 <resources>
     <!-- Default value is 100 -->
-    <integer name="config_gio_keyboard_fadeout_anim_time">0</integer>
+    <integer name="config_mini_keyboard_fadeout_anim_time">0</integer>
 </resources>

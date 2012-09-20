@@ -8,7 +8,7 @@
         <item name="keyboardHeight">@dimen/keyboardHeight</item>
         <item name="maxKeyboardHeight">@fraction/maxKeyboardHeight</item>
         <item name="minKeyboardHeight">@fraction/minKeyboardHeight</item>
-        <item name="moreKeysTemplate">@xml/kbd_gio_keyboard_template</item>
+        <item name="moreKeysTemplate">@xml/kbd_mini_keyboard_template</item>
         <item name="keyboardTopPadding">@fraction/keyboard_top_padding</item>
         <item name="keyboardBottomPadding">@fraction/keyboard_bottom_padding</item>
         <item name="keyboardHorizontalEdgesPadding">@fraction/keyboard_horizontal_edges_padding</item>
@@ -50,14 +50,14 @@
         <item name="keyPreviewOffset">@dimen/key_preview_offset</item>
         <item name="keyPreviewHeight">@dimen/key_preview_height</item>
         <item name="keyPreviewTextRatio">@fraction/key_preview_text_ratio</item>
-        <item name="moreKeysLayout">@layout/gio_keyboard</item>
+        <item name="moreKeysLayout">@layout/mini_keyboard</item>
         <item name="verticalCorrection">@dimen/keyboard_vertical_correction</item>
         <item name="shadowColor">#BB000000</item>
         <item name="shadowRadius">2.75</item>
         <item name="backgroundDimAmount">0.5</item>
     </style>
     <style
-        name="GioKeyboard"
+        name="MiniKeyboard"
         parent="Keyboard"
     >
         <item name="keyboardTopPadding">0dip</item>
@@ -65,16 +65,16 @@
         <item name="horizontalGap">0dip</item>
     </style>
     <style
-        name="GioKeyboardView"
+        name="MiniKeyboardView"
         parent="KeyboardView"
     >
         <item name="keyBackground">@drawable/btn_keyboard_key_popup</item>
-        <item name="verticalCorrection">@dimen/gio_keyboard_vertical_correction</item>
+        <item name="verticalCorrection">@dimen/mini_keyboard_vertical_correction</item>
     </style>
-    <style name="GioKeyboardPanelStyle">
+    <style name="MiniKeyboardPanelStyle">
         <item name="android:background">@drawable/keyboard_popup_panel_background</item>
-        <item name="android:paddingLeft">@dimen/gio_keyboard_horizontal_edges_padding</item>
-        <item name="android:paddingRight">@dimen/gio_keyboard_horizontal_edges_padding</item>
+        <item name="android:paddingLeft">@dimen/mini_keyboard_horizontal_edges_padding</item>
+        <item name="android:paddingRight">@dimen/mini_keyboard_horizontal_edges_padding</item>
     </style>
     <style name="SuggestionsStripBackgroundStyle">
         <item name="android:background">@drawable/keyboard_suggest_strip</item>
@@ -95,7 +95,7 @@
     </style>
     <style
         name="MoreSuggestionsViewStyle"
-        parent="GioKeyboardView"
+        parent="MiniKeyboardView"
     >
     </style>
     <style name="SuggestionBackgroundStyle">
@@ -151,7 +151,7 @@
         <item name="shadowColor">#FFFFFFFF</item>
     </style>
     <style
-        name="GioKeyboard.Stone"
+        name="MiniKeyboard.Stone"
         parent="Keyboard.Stone"
     >
         <item name="keyboardTopPadding">0dip</item>
@@ -159,8 +159,8 @@
         <item name="horizontalGap">0dip</item>
     </style>
     <style
-        name="GioKeyboardView.Stone"
-        parent="GioKeyboardView"
+        name="MiniKeyboardView.Stone"
+        parent="MiniKeyboardView"
     >
         <item name="keyBackground">@drawable/btn_keyboard_key_stone</item>
         <item name="keyTextColor">#FF000000</item>
@@ -198,7 +198,7 @@
         <item name="keyTextStyle">bold</item>
     </style>
     <style
-        name="GioKeyboard.Gingerbread"
+        name="MiniKeyboard.Gingerbread"
         parent="Keyboard.Gingerbread"
     >
         <item name="keyboardTopPadding">0dip</item>
@@ -206,8 +206,8 @@
         <item name="horizontalGap">0dip</item>
     </style>
     <style
-        name="GioKeyboardView.Gingerbread"
-        parent="GioKeyboardView"
+        name="MiniKeyboardView.Gingerbread"
+        parent="MiniKeyboardView"
     >
         <item name="android:background">@null</item>
     </style>
@@ -253,7 +253,7 @@
         <item name="shadowRadius">0.0</item>
     </style>
     <style
-        name="GioKeyboard.IceCreamSandwich"
+        name="MiniKeyboard.IceCreamSandwich"
         parent="Keyboard.IceCreamSandwich"
     >
         <item name="keyboardTopPadding">0dip</item>
@@ -261,16 +261,16 @@
         <item name="horizontalGap">0dip</item>
     </style>
     <style
-        name="GioKeyboardView.IceCreamSandwich"
-        parent="GioKeyboardView"
+        name="MiniKeyboardView.IceCreamSandwich"
+        parent="MiniKeyboardView"
     >
         <item name="android:background">@null</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_popup_ics</item>
     </style>
-    <style name="GioKeyboardPanelStyle.IceCreamSandwich">
+    <style name="MiniKeyboardPanelStyle.IceCreamSandwich">
         <item name="android:background">@drawable/keyboard_popup_panel_background_holo</item>
-        <item name="android:paddingLeft">@dimen/gio_keyboard_horizontal_edges_padding_ics</item>
-        <item name="android:paddingRight">@dimen/gio_keyboard_horizontal_edges_padding_ics</item>
+        <item name="android:paddingLeft">@dimen/mini_keyboard_horizontal_edges_padding_ics</item>
+        <item name="android:paddingRight">@dimen/mini_keyboard_horizontal_edges_padding_ics</item>
     </style>
     <style name="SuggestionsStripBackgroundStyle.IceCreamSandwich">
         <item name="android:background">@drawable/keyboard_suggest_strip_holo</item>
@@ -295,7 +295,7 @@
     </style>
     <style
         name="MoreSuggestionsViewStyle.IceCreamSandwich"
-        parent="GioKeyboardView.IceCreamSandwich"
+        parent="MiniKeyboardView.IceCreamSandwich"
     >
     </style>
     <style name="SuggestionBackgroundStyle.IceCreamSandwich">
@@ -303,11 +303,11 @@
     </style>
     <style
         name="SuggestionPreviewBackgroundStyle.IceCreamSandwich"
-        parent="GioKeyboardPanelStyle.IceCreamSandwich"
+        parent="MiniKeyboardPanelStyle.IceCreamSandwich"
     >
     </style>
-    <style name="GioKeyboardAnimation">
-        <item name="android:windowEnterAnimation">@anim/gio_keyboard_fadein</item>
-        <item name="android:windowExitAnimation">@anim/gio_keyboard_fadeout</item>
+    <style name="MiniKeyboardAnimation">
+        <item name="android:windowEnterAnimation">@anim/mini_keyboard_fadein</item>
+        <item name="android:windowExitAnimation">@anim/mini_keyboard_fadeout</item>
     </style>
 </resources>
