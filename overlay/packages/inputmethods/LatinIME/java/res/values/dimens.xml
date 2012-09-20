@@ -11,5 +11,5 @@
     <fraction name="key_bottom_gap_ics">3.227%p</fraction>
     <integer name="max_more_suggestions_row">3</integer>
     <!-- key_preview_backing_height = more_suggestions_row_height * max_more_suggestions_row -->
-    <dimen name="key_preview_backing_height">80dip</dimen>
+    <dimen name="key_preview_backing_height">160dip</dimen>
 </resources>
