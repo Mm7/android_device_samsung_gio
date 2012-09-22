@@ -25,6 +25,11 @@ PRODUCT_PACKAGES += \
     audio.primary.gio \
     audio_policy.gio
 
+## Lights && GPS
+PRODUCT_PACKAGES += \
+    lights.gio \
+    gps.gio
+
 ## Camera
 PRODUCT_PACKAGES += \
     camera.gio
