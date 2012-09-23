@@ -35,9 +35,9 @@ wifi.supplicant_scan_interval=60
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
-dalvik.vm.heapstartsize=5m	
-dalvik.vm.heapgrowthlimit=24m	
-dalvik.vm.heapsize=48m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=32m
+dalvik.vm.heapsize=64m
 dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.verify_bytecode=false
