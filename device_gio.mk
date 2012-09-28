@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.gio
 
+## Liblights
+PRODUCT_PACKAGES += \
+    lights.gio
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
