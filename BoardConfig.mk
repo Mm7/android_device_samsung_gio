@@ -22,10 +22,13 @@ include device/samsung/msm7x27-common/BoardConfigCommon.mk
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := gio
 TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
 
+
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := gio
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
