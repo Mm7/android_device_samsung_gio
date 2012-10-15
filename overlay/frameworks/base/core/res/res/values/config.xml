@@ -43,7 +43,7 @@
         <item>"bnep\\d"</item>
     </string-array>
 
-    <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_automatic_brightness_available">false</bool>
 
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
