@@ -25,14 +25,23 @@ PRODUCT_PACKAGES += \
     audio.primary.gio \
     audio_policy.gio
 
-## Lights && GPS
-PRODUCT_PACKAGES += \
-    lights.gio \
-    gps.gio
-
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.gio
+    camera.gio \
+    libjni_legacymosaic \
+    LegacyCamera
+
+## Liblights
+#PRODUCT_PACKAGES += \
+#    lights.gio
+
+## Wifi
+#PRODUCT_PACKAGES += \
+#    abtfilt \
+#    wlan_tool \
+#    wmiconfig \
+    eeprom-AR6002 \
+    ar6000.ko
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
@@ -41,5 +50,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
 
 ## LDPI assets
-PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi

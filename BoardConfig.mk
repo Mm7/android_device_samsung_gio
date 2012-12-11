@@ -26,9 +26,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
 
-## GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := gio
-
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
