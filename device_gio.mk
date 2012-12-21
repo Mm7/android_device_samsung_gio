@@ -31,18 +31,6 @@ PRODUCT_PACKAGES += \
     libjni_legacymosaic \
     LegacyCamera
 
-## Liblights
-#PRODUCT_PACKAGES += \
-#    lights.gio
-
-## Wifi
-#PRODUCT_PACKAGES += \
-#    abtfilt \
-#    wlan_tool \
-#    wmiconfig \
-    eeprom-AR6002 \
-    ar6000.ko
-
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
