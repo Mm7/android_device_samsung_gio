@@ -31,6 +31,12 @@ PRODUCT_PACKAGES += \
     libjni_legacymosaic \
     LegacyCamera
 
+# Wifi
+PRODUCT_PACKAGES += \
+    abtfilt \
+    wlan_tool \
+    wmiconfig
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
