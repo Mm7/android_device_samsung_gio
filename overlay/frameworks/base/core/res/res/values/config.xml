@@ -4,7 +4,7 @@
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
     <!-- Boolean indicating whether the start command should be called on the wireless interface
-         when starting the SoftAp -->
+         when starting the SoftAp-->
     <bool name="config_wifiApStartInterface">true</bool>
 
     <string-array translatable="false" name="config_tether_usb_regexs">
@@ -39,7 +39,7 @@
         <item>com.google.android.location</item>
     </string-array>
 
-    <integer name="config_deviceHardwareKeys">7</integer>
+<!--    <integer name="config_deviceHardwareKeys">7</integer>-->
     <bool name="config_samsung_stk">true</bool>
 
 
