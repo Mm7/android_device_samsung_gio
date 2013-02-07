@@ -12,30 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Inherit vendor proprietary files
+## Inherit products
+$(call inherit-product, device/samsung/msm7x27-common/common.mk)
 $(call inherit-product, vendor/samsung/gio/vendor_blobs.mk)
+$(call inherit-product, vendor/google/gapps_armv6_tiny.mk)
 
-include device/samsung/msm7x27-common/common.mk
+## MDPI assets
+PRODUCT_AAPT_CONFIG := normal mdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
-## Device specific overlay
-DEVICE_PACKAGE_OVERLAYS := device/samsung/gio/overlay
+## Inherit overlays
+$(call inherit-product, device/mdpi-common/mdpi.mk)
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gio/overlay
 
-## Audio
+## Wifi
 PRODUCT_PACKAGES += \
-    audio.primary.gio \
-    audio_policy.gio
-
-## Camera
-PRODUCT_PACKAGES += \
-    camera.gio \
-    libjni_legacymosaic \
-    LegacyCamera
+    abtfilt \
+    wlan_tool \
+    wmiconfig
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/gio/ramdisk/init.gt-s5660board.rc:root/init.gt-s5660board.rc \
-    device/samsung/gio/ramdisk/ueventd.gt-s5660board.rc:root/ueventd.gt-s5660board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.msm7x27.rc:root/init.gt-s5660board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.msm7x27.usb.rc:root/init.msm7x27.usb.rc\
+    device/samsung/msm7x27-common/ramdisk/ueventd.msm7x27.rc:root/ueventd.gt-s5660board.rc \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
-
-## LDPI assets
-PRODUCT_AAPT_PREF_CONFIG := mdpi

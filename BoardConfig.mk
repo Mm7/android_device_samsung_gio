@@ -19,12 +19,16 @@
 
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
+## Graphics
+TARGET_DISABLE_TRIPLE_BUFFERING := true
+
 ## Kernel, bootloader
 TARGET_BOOTLOADER_BOARD_NAME := gio
 TARGET_KERNEL_CONFIG := cyanogenmod_gio_defconfig
-
-## Assert
 TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
+
+## Camera FC hack
+CAMERA_FC_HACK := true
 
 ## Recovery
 BOARD_LDPI_RECOVERY := true
@@ -33,3 +37,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/gio/recovery/recovery_u
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
 TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
+
+SMALLER_FONT_FOOTPRINT := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/gio/bluetooth
+
