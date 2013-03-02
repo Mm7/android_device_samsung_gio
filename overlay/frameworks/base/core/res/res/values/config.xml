@@ -39,4 +39,5 @@
         <item>com.google.android.location</item>
     </string-array>
 
+        <bool name="config_samsung_stk">true</bool>
 </resources>
