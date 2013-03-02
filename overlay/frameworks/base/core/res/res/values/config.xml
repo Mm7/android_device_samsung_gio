@@ -39,10 +39,4 @@
         <item>com.google.android.location</item>
     </string-array>
 
-<!--    <integer name="config_deviceHardwareKeys">7</integer>-->
-    <bool name="config_samsung_stk">true</bool>
-
-        <integer name="config_deviceHardwareKeys">7</integer>
-        <bool name="config_samsung_stk">true</bool>
-
 </resources>
