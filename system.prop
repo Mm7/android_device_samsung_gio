@@ -8,6 +8,9 @@ video.accelerate.hw=1
 debug.sf.no_hw_vsync=1
 debug.composition.type=gpu
 
+# Lockscreen
+ro.hwaccel.lockscreen=0
+
 # RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
@@ -37,6 +40,9 @@ ro.ril.def.agps.feature=1
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
+
+# Memory
+persist.sys.purgeable_assets=1
 
 # Dalvik
 dalvik.vm.lockprof.threshold=500
