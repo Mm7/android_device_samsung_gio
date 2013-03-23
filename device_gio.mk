@@ -35,9 +35,9 @@ PRODUCT_PACKAGES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5570board.rc \
-    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5570board.usb.rc \
-    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5570board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5660board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5660board.usb.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5660board.rc \
     device/samsung/gio/ramdisk/GIO.rle:root/GIO.rle
 
 ## LDPI assets
