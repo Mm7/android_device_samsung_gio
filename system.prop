@@ -41,6 +41,7 @@ ro.ril.def.agps.feature=1
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
+service.adb.root=1
 
 # Memory
 persist.sys.purgeable_assets=1
