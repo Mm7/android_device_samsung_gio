@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+	17
+## Build the ath6kl-compat driver 
+BOARD_WLAN_DEVICE := ath6kl_compat
+
 ## Inherit vendor proprietary files
 include vendor/samsung/gio/vendor_blobs.mk
 include device/samsung/msm7x27-common/common.mk
