@@ -13,7 +13,6 @@
 # limitations under the License.
 
 
-	17
 ## Build the ath6kl-compat driver 
 BOARD_WLAN_DEVICE := ath6kl_compat
 
