@@ -22,14 +22,15 @@ on init
     mkdir /efs
     mount /tmp /tmp tmpfs
 
+on property:sys.usb.config=mass_storage,adb
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/idVendor 04e8
     write /sys/class/android_usb/android0/idProduct 685e
-    write /sys/class/android_usb/android0/functions mass_storage,adb
+    write /sys/class/android_usb/android0/functions $sys.usb.config
     write /sys/class/android_usb/android0/enable 1
     setprop service.adb.root 1
     start adbd
-    setprop mass_storage,adb 
+    setprop sys.usb.state $sys.usb.config
 
 
 
