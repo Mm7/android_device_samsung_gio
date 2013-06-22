@@ -21,6 +21,6 @@
 # function: add_lunch_combo generic-eng
 
 
-add_lunch_combo aokp_gio-eng
-add_lunch_combo aokp_gio-userdebug
-add_lunch_combo aokp_gio-user
+add_lunch_combo full_gio-eng
+add_lunch_combo full_gio-userdebug
+add_lunch_combo full_gio-user
