@@ -23,10 +23,3 @@
 $(call inherit-product, device/samsung/gio/device_gio.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Discard inherited values and use our own instead.
-PRODUCT_NAME := full_gio
-PRODUCT_DEVICE := gio
-PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := GT-S5660
-PRODUCT_MANUFACTURER := Samsung
